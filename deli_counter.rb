@@ -22,8 +22,7 @@ def now_serving(line)
   if line.length == 0 
     puts"There is nobody waiting to be served!"
   else
-    puts "Currently serving #{line.shift}." # could say: "Currently serving #{line.first}."
-    line.shift # this works in the IDE but no on repl.it
+    puts "Currently serving #{line.shift}." 
   end
 end
   
