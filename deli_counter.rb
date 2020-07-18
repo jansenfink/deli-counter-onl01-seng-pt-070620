@@ -18,10 +18,12 @@ def take_a_number(line, name)
 end
   
   
-now_serving(array)
-  if array.length > 0 
-    puts "Currently serving #{array.shift()}"
-  else puts "There is nobody waiting to be served!"
+def now_serving(line)
+  if line.length == 0 
+    puts"There is nobody waiting to be served!"
+  else
+    puts "Currently serving #{line.shift}." # could say: "Currently serving #{line.first}."
+    line.shift # this works in the IDE but no on repl.it
   end
 end
   
