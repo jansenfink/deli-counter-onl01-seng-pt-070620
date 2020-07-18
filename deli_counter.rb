@@ -3,7 +3,7 @@ def line(array)
     newarray = []
     i = 1 
     array.each do |name|
-      newarray.push("#{counter}. #{name}")
+      newarray.push("#{i}. #{name}")
       i += 1 
     end 
     puts "The line is currently: #{newarray.join(" ")}"
