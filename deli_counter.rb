@@ -17,3 +17,7 @@ def take_a_number(line, name)
   puts "Welcome, #{name}. You are number #{line.length} in line."
 end
   
+  
+now_serving(array)
+if array.length != 0 
+  puts "Currently serving #{array.}"
